@@ -11,7 +11,7 @@ const Header = () => {
            <div>
             <Link to='/'>Shop</Link>
             <Link to="/Order">Order</Link>
-            <Link to="/Order-review">Order Review</Link>
+         
             <Link to="/inventory">Inventory</Link>
             {
                     user?.uid ?
