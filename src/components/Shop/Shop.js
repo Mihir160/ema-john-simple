@@ -58,10 +58,10 @@ const Shop = () => {
                 product={product} handleAddToCart={handleAddToCart}></Product>)
             }
            </div>
-           <div className="cart-container">
+           <div className="cart-container text-center">
               <Cart cart={cart} clearCart={clearCart}></Cart>
               <Link to='/order'>
-                <button>Review Order</button>
+                <button className=' bg-orange-400 text-white p-1 rounded-lg'>Review Order</button>
               </Link>
             </div> 
         </div>

@@ -13,9 +13,16 @@ const Header = () => {
             <Link to="/Order">Order</Link>
          
             <Link to="/inventory">Inventory</Link>
+           
+            
             {
                     user?.uid ?
-                        <button className='btn-logout' onClick={logOut}>Log out</button>
+                        <>
+                        <Link to='/dashboard'>DashBoard</Link>
+                        <button  className='btn-logout bg-orange-500 ml-3 text-white p-1 rounded-lg' onClick={logOut}>Log out</button>
+                        
+                        </>
+                      
                         :
                         <>
                             <Link to="/login">Login</Link>
